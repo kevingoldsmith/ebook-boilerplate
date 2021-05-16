@@ -8,6 +8,9 @@ ZIP='false'
 ALL='true'
 COVER='false'
 
+# Add calibre to path for ebook-convert (MAC-ONLY)
+export PATH=$PATH:/Applications/calibre.app/Contents/MacOS/
+
 # Merge options into defaults
 while getopts t:epmhca option
 do
